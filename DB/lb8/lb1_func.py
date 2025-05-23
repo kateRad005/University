@@ -11,7 +11,7 @@ class BD:
 
 
     def __init__(self,db:str):
-        self.cur_con = sql.connect(user = 'root',password = 'root1',database = db)
+        self.cur_con = sql.connect(configuretion_files = 'config.cnf',database = db)
         self.db_name = db
 
     def close_con(self):
